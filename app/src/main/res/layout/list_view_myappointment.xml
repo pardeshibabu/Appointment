@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/ApptDetailName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProfName"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        />
+    <TextView
+        android:id="@+id/ApptDetailCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CollegeId"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/ApptDetailName"
+        />
+    <TextView
+        android:id="@+id/ApptDetailday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@id/ApptDetailCI"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/ApptDetailstrttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartTime"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/ApptDetailday"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/ApptDetailendtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EndTime"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/ApptDetailstrttime"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/ApptDetailAppttype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/ApptDetailendtime"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/ApptDetailReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reasone"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/ApptDetailAppttype"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

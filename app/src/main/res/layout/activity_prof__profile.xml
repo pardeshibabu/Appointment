@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prof_ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/ProfName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="ProfName"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/ProfCollegeId"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="ProfCollegeId"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/ProfEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="ProfEmail"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/ProfMySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="My Schedule"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@android:color/holo_green_dark"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/FreeTimeTextviews1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Free time"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/LinearProfileLayout"
+        />
+
+<!--Free time.....text views............................-->
+    <LinearLayout
+        android:id="@+id/LinearProfileLayoutDateTxtViews"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FreeTimeTextviews1"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_red_dark">
+
+        <TextView
+            android:id="@+id/DateTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Date :-"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/TimeFromTextviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:text="From:-"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/TimeToTextviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:text="To:-"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <!--<!....................List view..................&#45;&#45;....&ndash;&gt;-->
+
+
+    <LinearLayout
+        android:id="@+id/LinearProfileLayout4Time"
+        android:layout_width="275dp"
+        android:layout_height="87dp"
+        android:layout_below="@+id/FreeTimeTextviews1"
+        android:layout_marginLeft="101dp"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/holo_blue_bright">
+
+        <ListView
+            android:id="@+id/TimeFreeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/LinearProfileLayout4Time" />
+
+
+    </LinearLayout>
+
+
+    <!--Office TIme...................-->
+    <TextView
+        android:id="@+id/OfiiceTimeTextviews2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Office time"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/LinearProfileLayout4Time"
+        />
+<!--office time text view.............................................-->
+    <LinearLayout
+        android:id="@+id/LinearOfficeDateTxtViews"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OfiiceTimeTextviews2"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:id="@+id/DateOfiiceTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Date"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/TimeOfficeFromTextviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:text="From"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/TimeOfficeToTextviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:text="To"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+<!--&lt;!&ndash;ffice time list views-..................................................->-->
+    <LinearLayout
+        android:id="@+id/LinearProfileLayout5Time"
+        android:layout_width="275dp"
+        android:layout_height="87dp"
+        android:layout_below="@+id/OfiiceTimeTextviews2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_dark">
+
+        <ListView
+            android:id="@+id/TimeOfficeList"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/LinearProfileLayout5Time" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ProfUpdateBtn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="10dp"
+        android:text="Delete"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_red_dark"
+        android:layout_below="@id/LinearProfileLayout5Time"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Appointment</string>
+    <string name="Home">Home</string>
+    <string name="Profile">Profile</string>
+    <string name="Notification">Notification</string>
+    <string name="Messageg">Messageg</string>
+    <string name="My_Appointment">My Appointment</string>
+    <string name="Terms_And_Condition">Terms And Condition</string>
+    <string name="Privacy_And_Policy">Privacy And Policy</string>
+    <string name="Logout">Logout</string>
+    <string name="title_activity_student_home_page_navigation_drawable">
+        StudentHomePageNavigationDrawableActivity
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfMyAppointmentActivity">
+
+    <TextView
+        android:id="@+id/Stu-Proftxtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student->Professor"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        />
+    <LinearLayout
+        android:id="@+id/ProfMyapptLinear1"
+        android:layout_height="270dp"
+        android:layout_width="160dp"
+        android:layout_below="@+id/Stu-Proftxtview"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AppttxtViewName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Stu_Name:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewCollegeId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="College_ID:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewApptDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Booking_Date:"
+            android:textSize="22dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewStrtTime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Start_Time:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewEndTime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="End_Time"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewReason"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Reason:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewType"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Type :"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ProfMyapptLinear2"
+        android:layout_height="270dp"
+        android:layout_width="250dp"
+        android:layout_below="@+id/Stu-Proftxtview"
+        android:orientation="vertical"
+        android:layout_marginLeft="160dp">
+        <ListView
+            android:id="@+id/myappt_Stu_Prof_Listview"
+            android:layout_height="270dp"
+            android:layout_width="250dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Prof-Proftxtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Professor->Professor"
+        android:gravity="center"
+        android:layout_below="@+id/ProfMyapptLinear1"
+        android:textColor="@android:color/holo_red_dark"
+        />
+    <LinearLayout
+        android:id="@+id/ProfMyapptLinear3"
+        android:layout_height="270dp"
+        android:layout_width="160dp"
+        android:layout_below="@+id/Prof-Proftxtview"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AppttxtViewPName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Pro_Name:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/AppttxtViewPCollegeId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="College_ID:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/ProAppttxtViewApptDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Booking_Date:"
+            android:textSize="22dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/ProAppttxtViewStrtTime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Start_Time:"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/ProAppttxtViewEndTime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="End_Time"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/ProAppttxtViewReason"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Reason:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/ProAppttxtViewType"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Type :"
+            android:textSize="20dp"
+            android:layout_marginTop="0dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ProfMyapptLinear4"
+        android:layout_height="270dp"
+        android:layout_width="250dp"
+        android:layout_below="@+id/Prof-Proftxtview"
+        android:orientation="vertical"
+        android:layout_marginLeft="160dp">
+
+        <ListView
+            android:id="@+id/myapptListview"
+            android:layout_height="250dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/Prof-Proftxtview"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/Register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="text"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <EditText
+        android:id="@+id/Register_RollNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="CollegeId  @ex:- 123qwer"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textPhonetic"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/Register_name"
+        />
+    <EditText
+        android:id="@+id/Register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_RollNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/Register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_email"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/Register_Cnf_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_password"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/Register_textViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Already have an account? Login"
+        android:layout_below="@+id/Register_buttonSignUp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorAccent"
+        />
+    <!--<CheckedTextView-->
+        <!--android:id="@+id/Register_admin_link"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="15dp"-->
+        <!--android:layout_below="@+id/Register_textViewLogin"-->
+        <!--android:text="Professor"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:layout_marginTop="15dp"/>-->
+    <!--<CheckedTextView-->
+        <!--android:id="@+id/Register_not_admin_link"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="15dp"-->
+        <!--android:layout_below="@+id/Register_textViewLogin"-->
+        <!--android:text="Student"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:layout_marginTop="15dp"/>-->
+    <Button
+        android:id="@+id/Register_buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/Register_Cnf_password"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_green_dark"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/Register_textViewLogin"
+        android:text="Professor"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="15dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/checkBox1"
+        android:text="Student"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"/>
+        //android:layout_marginTop="15dp"
+
+
+</RelativeLayout>

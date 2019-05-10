@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Login_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/Login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_Email"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <Button
+        android:id="@+id/Loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/Login_password"
+        android:text="Login"
+        android:textStyle="bold"
+        android:background="@android:color/holo_green_dark"
+        android:textColorHint="@android:color/background_light"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/LoginSignupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/Loginbutton"
+        android:text="Don't have account?  Sign Up"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColorHint="@android:color/background_light"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/holo_green_dark"/>
+
+    <CheckBox
+        android:id="@+id/ProfcheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/LoginSignupBtn"
+        android:text="Professor"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        />
+
+    <CheckBox
+        android:id="@+id/StucheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/ProfcheckBox"
+        android:text="Student"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>
+
+

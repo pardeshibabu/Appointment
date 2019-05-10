@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StuAppointmentActivity">
+
+    <TextView
+        android:id="@+id/Stu-ProftxtviewStuAppt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student->Professor"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_dark"
+        />
+
+    <ListView
+        android:id="@+id/myappt_Stu_Listview1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Stu-ProftxtviewStuAppt"
+        />
+
+</RelativeLayout>

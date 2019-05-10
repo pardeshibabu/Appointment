@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetDescriptionAptActivity">
+
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Date :"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/DateInput1"
+            android:layout_width="245dp"
+            android:layout_height="45dp"
+            android:hint="Enter Date"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:inputType="date"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/DateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="From "
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_below="@+id/Date"
+            android:layout_marginTop="10dp"
+            android:inputType="time"
+            android:layout_weight="1"
+            android:ems="10"/>
+        <EditText
+            android:id="@+id/DateInput2"
+            android:layout_width="245dp"
+            android:layout_height="45dp"
+            android:hint="From..."
+            android:layout_below="@+id/Date"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:inputType="time"
+            android:layout_weight="1"
+            android:ems="10"/>
+
+
+        <TextView
+            android:id="@+id/DateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="To"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/DateFrom"/>
+
+        <EditText
+            android:id="@+id/DateInput3"
+            android:layout_width="245dp"
+            android:layout_height="45dp"
+            android:hint="To"
+            android:layout_below="@+id/DateInput2"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:inputType="datetime"/>
+
+
+        <TextView
+            android:id="@+id/Subject"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Subject :"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/DateTo"/>
+
+        <EditText
+            android:id="@+id/SubjectInput"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="Clarify doubts...."
+            android:textStyle="normal"
+            android:layout_below="@+id/DateInput3"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="22dp"
+            android:inputType="text"/>
+
+
+    <TextView
+        android:id="@+id/AppontmentType"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Appointment type :"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Subject"/>
+
+    <CheckBox
+        android:id="@+id/General"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="General"
+        android:textStyle="normal"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/AppontmentType"/>
+    <CheckBox
+        android:id="@+id/Important"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Important"
+        android:textStyle="normal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/General"/>
+    <CheckBox
+        android:id="@+id/RuProf"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Are you professor"
+        android:textStyle="normal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Important"/>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/MarkAs"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:text="Mark as :"-->
+        <!--android:textStyle="normal"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_below="@+id/Weekly"/>-->
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/General"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:text="General"-->
+        <!--android:textStyle="normal"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_below="@+id/MarkAs"/>-->
+    <!--<CheckBox-->
+        <!--android:id="@+id/Important"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:text="Important"-->
+        <!--android:textStyle="normal"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/General"/>-->
+
+    <Button
+        android:id="@+id/AppointmentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RuProf"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/holo_green_dark"
+        android:padding="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Make Apponitment"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

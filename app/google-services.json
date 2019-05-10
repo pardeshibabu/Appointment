@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "458573382790",
+    "firebase_url": "https://appointment-ca555.firebaseio.com",
+    "project_id": "appointment-ca555",
+    "storage_bucket": "appointment-ca555.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458573382790:android:687f0d243dce2e39",
+        "android_client_info": {
+          "package_name": "com.example.appointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458573382790-ges2q9fgipo3uaikfitf69bfo0k7df62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appointment",
+            "certificate_hash": "49158f40bd95f247854d71e841c02eb0356ac170"
+          }
+        },
+        {
+          "client_id": "458573382790-k3kjciga2e9kajh4cl3rki7chuorgjug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoqZNQpJ3QSNrWqPGvY8BofR7zPrfXIsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458573382790-k3kjciga2e9kajh4cl3rki7chuorgjug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

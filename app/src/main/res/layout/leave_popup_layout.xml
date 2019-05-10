@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ClosPopUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="X"
+        android:textColor="@android:color/background_light"
+        android:layout_marginLeft="120dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/RuSurextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure to cancele appointment:"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/ClosPopUp"
+        />
+    <EditText
+        android:id="@+id/LeaveDate"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:hint="Enter Date"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="date"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/RuSurextview"
+        />
+    <Button
+        android:id="@+id/LeaveBtn"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:text="Leave"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/LeaveDate"
+        android:background="@android:color/holo_red_dark"
+        />
+
+
+
+</LinearLayout>

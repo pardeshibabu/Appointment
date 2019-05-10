@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseDateActivity">
+
+    <Button
+        android:id="@+id/BtnTxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Choose Date"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginLeft="130dp"
+        />
+    <LinearLayout
+        android:id="@+id/ChooseLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_light"
+        android:layout_below="@+id/BtnTxtview"
+        >
+        <TextView
+            android:id="@+id/ChooseFreeTxtview"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Free Time List"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/ChooseTimeFreeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ChooseLinear2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_red_dark"
+        android:layout_below="@+id/ChooseLinear1"
+        >
+        <TextView
+            android:id="@+id/ChooseOfficeTxtview"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Office Time List"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/ChooseTimeOfficeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ChooseLinear3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/ChooseLinear2"
+        >
+        <TextView
+            android:id="@+id/ChooseBookTxtview"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Booked Time List"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/ChooseTimeBookedList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
